@@ -1,0 +1,61 @@
+<div th:fragment="header">
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-md visible-lg">
+                        <div id="logo-img"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Eesti kiirkuubimine</h1></a>
+                    </div>
+
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li id="navHomeButton" class="visible-xs active">
+                            <a href="/">
+                                <span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li id="navNewsButton">
+                            <a href="/news">
+                                <span class="glyphicon glyphicon-comment"></span><br class="hidden-xs"> News</a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <span class="glyphicon glyphicon-tags"></span><br class="hidden-xs"> Competitions</a>
+                        </li>
+                        <li id="navRecordsButton">
+                            <a href="/">
+                                <span class="glyphicon glyphicon-time"></span><br class="hidden-xs"> Records</a>
+                        </li>
+                        <li>
+                            <a href="/about">
+                                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+                        </li>
+                        <li id="navPhotosButton">
+                            <a href="/photos">
+                                <span class="glyphicon glyphicon-picture"></span><br class="hidden-xs"> Photos</a>
+                        </li>
+                        <li id="navSponsorsButton">
+                            <a href="#" onclick="$dc.loadSponsors();">
+                                <span class="glyphicon glyphicon-bitcoin"></span><br class="hidden-xs"> Sponsors</a>
+                        </li>
+                        <li id="navContactsButton">
+                            <a href="#" onclick="$dc.loadContacts();">
+                                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Contacts</a>
+                        </li>
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+            </div><!-- .container -->
+        </nav><!-- #header-nav -->
+    </header>
+</div>
